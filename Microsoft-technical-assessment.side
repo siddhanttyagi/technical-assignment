@@ -1,0 +1,91 @@
+{
+  "id": "9c18da6c-58f6-499a-987c-55e0caa609f5",
+  "version": "2.0",
+  "name": "Microsoft-technical-assessment",
+  "url": "https://libgen.is/",
+  "tests": [{
+    "id": "3cea95d8-3da8-4451-8ea1-e5dc77125ce4",
+    "name": "download-latest-pdf-from-the-website",
+    "commands": [{
+      "id": "fa0b11c0-7c9e-4fb9-a60e-cb325f257eac",
+      "comment": "",
+      "command": "open",
+      "target": "https://libgen.is/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4077c4c1-87e9-43b7-953c-1b28fc2e75e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1020x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd844f23-391c-4685-b5c8-b23358cad1f4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[5]/a",
+      "targets": [
+        ["linkText=LAST", "linkText"],
+        ["css=#menu > li:nth-child(5) > .drop", "css:finder"],
+        ["xpath=//a[contains(text(),'LAST')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search.php?mode=last')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LAST')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "508452a3-85a3-45b2-8824-9595088dae5d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[3]/a",
+      "targets": [
+        ["id=4233263", "id"],
+        ["linkText=High Performance SRE : Automation, error budgeting, RPAs, SLOs, and SLAs with site reliability engineering", "linkText"],
+        ["css=#\\34 233263", "css:finder"],
+        ["xpath=//a[contains(text(),'High Performance SRE : Automation, error budgeting, RPAs, SLOs, and SLAs with site reliability engineering')]", "xpath:link"],
+        ["xpath=//a[@id='4233263']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'book/index.php?md5=4631EEF6968599603ADA040DC919BD67')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'High Performance SRE : Automation, error budgeting, RPAs, SLOs, and SLAs with site reliability engineering')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e64f537-5839-48b7-98cf-f5c1fc417f2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(10) > a > font > font",
+      "targets": [
+        ["css=td:nth-child(10) > a > font > font", "css:finder"],
+        ["xpath=//td[10]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "126ea668-7bbb-4b91-a5b3-d686256a7337",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=GET",
+      "targets": [
+        ["linkText=GET", "linkText"],
+        ["css=h2:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'GET')]", "xpath:link"],
+        ["xpath=//div[@id='download']/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://download.library.lol/main/4233000/d9ae9407b592948551987179aaf8abd7/Hannah%20Arendt_%20Gershom%20Scholem%20-%20The%20Correspondence%20of%20Hannah%20Arendt%20and%20Gershom%20Scholem-The%20University%20of%20Chicago%20Press%20%282017%29.epub')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'GET')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3094f307-b2de-48ae-b6c8-9963934f20e6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://libgen.is/"],
+  "plugins": []
+}
